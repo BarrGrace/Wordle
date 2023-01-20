@@ -1,0 +1,296 @@
+html {
+
+  height: 100%;
+
+  body {
+  
+    background-color: blanchedalmond;
+    height: 90%;
+    
+    #root {
+
+      height: 100%;
+
+      #home {
+  
+        $border-radius: 4px;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Courier New', Courier, monospace;
+        justify-content: space-between;
+        color: rgb(92, 60, 12);
+        height: 50%;
+
+        $size-of-text: 20px;
+    
+        #homePage {
+    
+          font-size: 100px;
+          margin-top: 0;
+        }
+
+        h1 {
+
+          font-size: 50px;
+        }
+
+        label {
+
+          font-size: $size-of-text;
+        }
+    
+        button {
+    
+          background-color: rgb(98, 161, 254);
+          border: none;
+          border-radius: $border-radius;
+          color: white;
+          margin-left: 5px;
+          font-size: $size-of-text;
+
+          &:hover {
+
+            background-color: rgb(38, 191, 191);
+          }
+        }
+    
+        input[type] {
+    
+          background-color: rgb(248, 249, 250);
+          border: 1px solid rgb(222, 226, 230);
+          border-radius: $border-radius;
+          font-size: $size-of-text;
+        }
+      }
+    
+      .header {
+        $inner-header-colour: rgb(92, 60, 12);
+
+        
+        .login {
+          
+          display: flex;
+          align-items: center;
+
+          button {
+
+            border-radius: 5px;
+            width: 115px;
+            padding: 1px;
+            position: relative;
+            color: $inner-header-colour;
+
+            a {
+
+              text-decoration: none;
+              color: $inner-header-colour;
+            }
+          }
+        }
+    
+        $header-colour: burlywood;
+        $button-size: 60px;
+    
+        background-color: rgb(92, 60, 12);
+        color:$header-colour;
+        margin-bottom: 10px;
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-style: italic;
+    
+        button {
+    
+          background-color:$header-colour;
+          width: $button-size;
+          height : $button-size;
+          font-size: 35px;
+          border-radius: 50px;
+          margin-right: 5px;
+    
+          &:hover {
+    
+            background-color: aliceblue;
+          }
+        }
+      }
+
+      .popFinish {
+
+        $font-size: 40px;
+
+        position: fixed;
+        background-color: rgb(175, 208, 236);
+        border: 1px solid black;
+        padding-bottom: 10px;
+        left: 30%;
+        align-items: center;
+        justify-content: center;
+        font-size: $font-size;
+        border-radius: 5px;
+        width: 40%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+
+        button {
+
+          font-size: $font-size;
+          background-color: rgb(38, 127, 209);
+          border-radius: 5px;
+
+          &:hover {
+
+            background-color: rgb(20, 48, 173);
+          }
+        }
+      }
+      
+      .form {
+        
+        position: fixed;
+        left: 30%;
+        border: 30%;
+        border: 1px solid balck;
+        background-color: aliceblue;
+        border-radius: 5px;
+        padding: 3%;
+        padding-top: 1%;
+        border: 1px solid black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        .formButtons {
+
+          margin-left: 20%;
+          margin-top: 5%;
+
+          button {
+    
+            background-color: rgb(98, 161, 254);
+            border: none;
+            color: white;
+            margin-left: 5px;
+            border-radius: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            width: 30%;
+            font-size: 20px;
+
+            &:hover {
+
+              background-color: aqua;
+            }
+          }
+        }
+        
+      }
+      
+      .pop {
+
+        position: fixed;
+        left: 30%;
+        border: 1px solid black;
+        background-color: aliceblue;
+        border-radius: 5px;
+        padding: 3%;
+        padding-top: 1%;    
+
+        button {
+
+          background-color: rgb(187, 164, 164);
+          border-radius: 3px;
+          position: relative;
+          left: 99%;
+
+          &:hover {
+
+            background-color: red;
+          }
+        }
+      }
+    
+      .placeGrid {
+      
+        display: flex;
+        justify-content: center;
+    
+        .words {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-row-gap: 10px;
+            grid-column-gap: 2px;
+            margin-bottom: 30px;
+            width: 30%;
+    
+            .wordle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: solid black;
+                height: 70px;
+                width: 70px;
+                border-radius: 15px;
+                font-size: 50px;
+            }
+          }
+      }
+    
+      .letters {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    
+        #notDone {
+          border: solid black;
+          background-color: white;
+          width: 100px;
+        }
+    
+        button {
+          border: solid black;
+          margin: 5px;
+          height: 60px;
+          width: 60px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 50px;
+      
+          &:hover {
+      
+            color: blue;
+            background-color: rgb(0, 204, 255);
+          }
+        }
+      
+        #done {
+          border: solid black;
+          font-size: 40px;
+          background-color: rgb(127, 171, 197);
+          color: rgb(20, 48, 173);
+          width: 100px;
+      
+          &:hover {
+      
+            background-color: rgb(52, 206, 198);
+            color: blue;
+          }
+        }
+      }
+    }
+  }   
+}
+
+  
+
+
+
+
+

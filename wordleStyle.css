@@ -1,0 +1,214 @@
+html {
+  height: 100%;
+}
+html body {
+  background-color: blanchedalmond;
+  height: 90%;
+}
+html body #root {
+  height: 100%;
+}
+html body #root #home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: space-between;
+  color: rgb(92, 60, 12);
+  height: 50%;
+}
+html body #root #home #homePage {
+  font-size: 100px;
+  margin-top: 0;
+}
+html body #root #home h1 {
+  font-size: 50px;
+}
+html body #root #home label {
+  font-size: 20px;
+}
+html body #root #home button {
+  background-color: rgb(98, 161, 254);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin-left: 5px;
+  font-size: 20px;
+}
+html body #root #home button:hover {
+  background-color: rgb(38, 191, 191);
+}
+html body #root #home input[type] {
+  background-color: rgb(248, 249, 250);
+  border: 1px solid rgb(222, 226, 230);
+  border-radius: 4px;
+  font-size: 20px;
+}
+html body #root .header {
+  background-color: rgb(92, 60, 12);
+  color: burlywood;
+  margin-bottom: 10px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-style: italic;
+}
+html body #root .header .login {
+  display: flex;
+  align-items: center;
+}
+html body #root .header .login button {
+  border-radius: 5px;
+  width: 115px;
+  padding: 1px;
+  position: relative;
+  color: rgb(92, 60, 12);
+}
+html body #root .header .login button a {
+  text-decoration: none;
+  color: rgb(92, 60, 12);
+}
+html body #root .header button {
+  background-color: burlywood;
+  width: 60px;
+  height: 60px;
+  font-size: 35px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+html body #root .header button:hover {
+  background-color: aliceblue;
+}
+html body #root .popFinish {
+  position: fixed;
+  background-color: rgb(175, 208, 236);
+  border: 1px solid black;
+  padding-bottom: 10px;
+  left: 30%;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  border-radius: 5px;
+  width: 40%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body #root .popFinish button {
+  font-size: 40px;
+  background-color: rgb(38, 127, 209);
+  border-radius: 5px;
+}
+html body #root .popFinish button:hover {
+  background-color: rgb(20, 48, 173);
+}
+html body #root .form {
+  position: fixed;
+  left: 30%;
+  border: 30%;
+  border: 1px solid balck;
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding: 3%;
+  padding-top: 1%;
+  border: 1px solid black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+html body #root .form .formButtons {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+html body #root .form .formButtons button {
+  background-color: rgb(98, 161, 254);
+  border: none;
+  color: white;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  width: 30%;
+  font-size: 20px;
+}
+html body #root .form .formButtons button:hover {
+  background-color: aqua;
+}
+html body #root .pop {
+  position: fixed;
+  left: 30%;
+  border: 1px solid black;
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding: 3%;
+  padding-top: 1%;
+}
+html body #root .pop button {
+  background-color: rgb(187, 164, 164);
+  border-radius: 3px;
+  position: relative;
+  left: 99%;
+}
+html body #root .pop button:hover {
+  background-color: red;
+}
+html body #root .placeGrid {
+  display: flex;
+  justify-content: center;
+}
+html body #root .placeGrid .words {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 2px;
+  margin-bottom: 30px;
+  width: 30%;
+}
+html body #root .placeGrid .words .wordle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid black;
+  height: 70px;
+  width: 70px;
+  border-radius: 15px;
+  font-size: 50px;
+}
+html body #root .letters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+html body #root .letters #notDone {
+  border: solid black;
+  background-color: white;
+  width: 100px;
+}
+html body #root .letters button {
+  border: solid black;
+  margin: 5px;
+  height: 60px;
+  width: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+html body #root .letters button:hover {
+  color: blue;
+  background-color: rgb(0, 204, 255);
+}
+html body #root .letters #done {
+  border: solid black;
+  font-size: 40px;
+  background-color: rgb(127, 171, 197);
+  color: rgb(20, 48, 173);
+  width: 100px;
+}
+html body #root .letters #done:hover {
+  background-color: rgb(52, 206, 198);
+  color: blue;
+}/*# sourceMappingURL=wordleStyle.css.map */
