@@ -1,12 +1,12 @@
 import { Wordle } from './pages/wordle';
 import { Route, Routes} from 'react-router-dom';
 import {Home} from './pages/Home';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import { userContex } from './provider/userContex'
 import { Header } from './components/Header';
 import { Popup } from './components/popUp'
 import { popupContext } from './provider/popupContext';
-import { UsePopup } from './hooks/usePopup';
+
 
 function App() {
 

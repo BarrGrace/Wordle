@@ -1,8 +1,7 @@
 
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { UsePopup } from "../hooks/usePopup";
-import { popupContext } from "../provider/popupContext";
 import { userContex } from "../provider/userContex";
 
 interface finishMessageInterface {
@@ -10,15 +9,8 @@ interface finishMessageInterface {
     pop : string;
     removePop : () => void;
 }
-
-interface SubmitFormInterface {
-
-    removePop : () => void;
-    setUser : (user : { name: string; }) => void;
-}
-
 function FinishMessage({pop, removePop} : finishMessageInterface) {
-
+    
     return(
         <div className="popFinish">
         {pop}<br/>
@@ -27,6 +19,11 @@ function FinishMessage({pop, removePop} : finishMessageInterface) {
     )
 }
 
+interface SubmitFormInterface {
+
+    removePop : () => void;
+    setUser : (user : { name: string; }) => void;
+}
 function SubmitForm({removePop, setUser} : SubmitFormInterface) {
 
     return (
@@ -95,6 +92,7 @@ function HowToPlayMessage({removePop} : HowToPlayMessageInterface){
 
 
 //todo: add a shodow around the pop.
+//todo: put function into a different file to orginize the code.
 export function Popup() {
 
     const {removePop, pop} = UsePopup();

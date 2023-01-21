@@ -1,8 +1,5 @@
-import {Words} from '../components/Words.js';
-import {Letters} from '../components/letters';
 import {useState, useEffect, useRef, useContext} from 'react'
 import { UsePopup } from '../hooks/usePopup.js';
-import { userContex } from '../provider/userContex.js';
 import { letterContext } from '../provider/lettersContext.js';
 import { wordsContext } from '../provider/wordsContext.js';
 
@@ -18,7 +15,7 @@ export function UseWordle() {
     //HTMLInputElement is a type that is part of the TypeScript DOM library. 
     //It represents an HTML <input> element in the DOM
     const focusWord = useRef<HTMLInputElement>(null);
-    const {openPopUp, pop, removePop, setPop} = UsePopup();
+    const {setPop} = UsePopup();
     //todo: try to change letters to a useRef, as setLetters is not been used.
     
 

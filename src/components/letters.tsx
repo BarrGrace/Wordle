@@ -1,6 +1,5 @@
-import { JSXElementConstructor, Key, ReactElement, ReactFragment, ReactPortal, useContext } from "react";
+import { JSXElementConstructor, Key, ReactElement, ReactFragment, ReactPortal } from "react";
 import { UseWordle } from "../hooks/useWordle";
-import { letterContext } from "../provider/lettersContext";
 
 export function Letters() {
 

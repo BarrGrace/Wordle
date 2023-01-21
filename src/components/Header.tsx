@@ -1,9 +1,8 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { UsePopup } from '../hooks/usePopup'
-import { popupContext } from "../provider/popupContext";
 import { userContex } from "../provider/userContex";
-import { Popup } from "./popUp";
+
 
 
 export function Header(){

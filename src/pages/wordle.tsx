@@ -1,5 +1,5 @@
-import {Words} from '../components/Words';
-import {Letters} from '../components/letters';
+import { Words } from '../components/Words';
+import { Letters } from '../components/letters';
 import { letterContext } from '../provider/lettersContext';
 import { useRef, useState } from 'react';
 import { wordsContext } from '../provider/wordsContext';

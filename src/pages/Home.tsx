@@ -1,8 +1,5 @@
-import { Header } from "../components/Header";
-import React, {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { Popup } from "../components/popUp";
-import { UsePopup } from "../hooks/usePopup";
 import { userContex } from "../provider/userContex";
 
 export function Home() {
