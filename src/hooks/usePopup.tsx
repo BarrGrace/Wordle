@@ -4,9 +4,7 @@ import { popupContext } from "../provider/popupContext";
 export function UsePopup(){
 
     const {pop, setPop} = useContext(popupContext)
-    
     function openPopUp(){
-        
         setPop('else');
     }
 
@@ -22,9 +20,9 @@ export function UsePopup(){
 
     return {
 
-        pop, 
+        pop,
         setPop,
-        openPopUp, 
+        openPopUp,
         removePop,
         openForm
     }

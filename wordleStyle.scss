@@ -1,11 +1,15 @@
 html {
 
   height: 100%;
+  width: 100%;
 
   body {
   
     background-color: blanchedalmond;
     height: 90%;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
     
     #root {
 
@@ -82,11 +86,16 @@ html {
             position: relative;
             color: $inner-header-colour;
 
-            a {
-
-              text-decoration: none;
-              color: $inner-header-colour;
-            }
+          }
+          a {
+  
+            position: relative;
+            text-decoration: none;
+            background-color: burlywood;
+            border: 1px solid black;
+            padding: 1px;
+            border-radius: 5px;
+            color: $inner-header-colour;
           }
         }
     
@@ -101,6 +110,7 @@ html {
         align-items: center;
         justify-content: space-between;
         font-style: italic;
+        padding: 0%;
     
         button {
     
@@ -152,7 +162,7 @@ html {
         }
       }
       
-      .form {
+      form {
         
         position: fixed;
         left: 30%;
