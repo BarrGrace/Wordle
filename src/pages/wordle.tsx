@@ -3,7 +3,6 @@ import { Letters } from '../components/letters';
 import { useEffect, useRef, useState } from 'react';
 import { UsePopup } from '../hooks/usePopup';
 
-
 export function Wordle() {
 
   const user = localStorage.getItem("name");
@@ -45,16 +44,13 @@ export function Wordle() {
 
   function isABC(char : string) {
 
-      const ABC = 'abcdefghijklmnopqrstuvwxyz';
-
-      for (let i = 0; i < 26; i++) {
-
-          if (ABC.charAt(i) === char.toLowerCase()) {
-
-              return true;
-          }
-      }
-      return false;
+    const ABC = 'abcdefghijklmnopqrstuvwxyz';
+    for (let i = 0; i < 26; i++) {
+        if (ABC.charAt(i) === char.toLowerCase()) {
+            return true;
+        }
+    }
+    return false;
   }
 
   function addLetter(button : string) {
