@@ -24,7 +24,7 @@ export function Wordle() {
   const [word, setWord] = useState(myWords);
   const index = useRef(0);
   const focusWord = useRef<HTMLInputElement>(null);
-  const {setPop} = UsePopup();
+  const {setPop, pop} = UsePopup();
 
   useEffect (() => {
       if (focusWord.current) {
@@ -58,7 +58,7 @@ export function Wordle() {
   }
 
   function addLetter(button : string) {
-    if (!isABC(button) || index.current === 25){
+    if (!isABC(button) || index.current === 25 || pop !== 'none'){
         return;
     }
       word[index.current] = {letter : button.toUpperCase(), colour: Wordlecolour};
